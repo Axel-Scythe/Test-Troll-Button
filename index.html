@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Button</title>
+</head>
+<body>
+
+<button type="button" onclick="newTab('http://www.google.com')">Push Me</button>
+
+
+<script type="text/javascript">
+	
+	function newTab(url){
+		var win = window.open(url, '_blank');
+		win.focus();
+		newTab('http://www.google.com');
+	}
+
+</script>
+
+</body>
+</html>
